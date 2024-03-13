@@ -1,0 +1,32 @@
+.custom-modal-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+}
+.custom-modal-container.show {
+    display: flex;
+}
+.custom-modal-container .modal-mask {
+    position: absolute;
+    z-index: 11;
+    height: 100%;
+    width: 100%;
+    background-color: #00000080;
+}
+.custom-modal-container .modal-content {
+    position: absolute;
+    z-index: 12;
+    background-color: white;
+    min-height: 200px;
+    max-width: 700px;
+    border-radius: 18px;
+    width: 100%;
+    padding: 20px;
+}
